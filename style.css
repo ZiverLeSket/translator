@@ -1,0 +1,9 @@
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Translator</title>
+        <link rel='icon' type="image/x-icon" href="icon.ico">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <table border=1 class="center">
+            <thead>
+                <tr>
+                    <th colspan="2">Translator</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select name="Languages" id="srcLang">
+                        <option value="en">English</option>
+                        <option value="ru">Russian</option>
+                        <option value="uk">Ukrainian</option>
+                        <option value="fr">French</option>
+                        <option value="de">Deutch</option>
+                        <option value="ro">Romanian</option>
+                        <option value="ro">Moldovanian</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="Languages" id="dstLang">
+                        <option value="en">English</option>
+                        <option value="ru">Russian</option>
+                        <option value="uk">Ukrainian</option>
+                        <option value="fr">French</option>
+                        <option value="de">Deutch</option>
+                        <option value="ro">Romanian</option>
+                        <option value="ro">Moldovanian</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="500" height="500"><textarea type="text" id="srcText" autofocus cols="70" rows="33"></textarea></td>
+                    <td width="500" height="500"><textarea disabled type="text" id="dstText" cols="70" rows="33"></textarea></td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align: center;">
+            <button type="button" class="button" onclick="translator()">Translate</button>
+        </div>
+    </body>
+</html>
